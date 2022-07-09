@@ -2,6 +2,7 @@
 
 ![](./screenshot.png)
 
+## How to use
 - Click on the left and right chevrons to view different elements
 - Click [here](https://kiruanime2003.github.io/reviews/) for a live preview
 
