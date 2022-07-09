@@ -1,0 +1,151 @@
+$azureX11WebColor: #EDF7F6;
+$oxfordBlue: #102542;
+$cinnamonSatin: #D36582;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $azureX11WebColor;
+}
+
+#box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px $oxfordBlue solid;
+    border-radius: 3%;
+    padding: 20px;
+    background-color: #dbebeb;
+    width: fit-content;
+
+    img{
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        border: 3px $cinnamonSatin solid;
+    }
+
+    h2{
+        text-align: center;
+        margin: 28px 0 3px 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: $oxfordBlue;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 21px;
+        font-weight: 500;
+        margin: 0px 0 11px 0;
+        color: $cinnamonSatin;
+    }
+
+    p{
+        text-align: center;
+        word-wrap: break-word;
+        width: 485px;
+        line-height: 1.5;
+        font-size: 17px;
+        font-weight: 400;
+        color: $oxfordBlue;
+        margin: 0 0 18px 0;
+    }
+
+    #svg-box{
+        position: relative;
+        left: 200px;
+
+        svg:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:582px) {
+    #box{
+    
+        img{
+            width: 115px;
+            height:115px;
+        }
+    
+        h2{
+            font-size: 19px;
+        }
+    
+        h3{
+            font-size: 17px;
+        }
+    
+        p{
+            width: 400px;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        #svg-box{
+            left: 160px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:452px) {
+    #box{
+    
+        img{
+            width: 95px;
+            height:95px;
+        }
+    
+        h2{
+            font-size: 18px;
+        }
+    
+        h3{
+            font-size: 16px;
+        }
+    
+        p{
+            width: 280px;
+            font-size: 13.5px;
+        }
+
+        #svg-box{
+            left: 100px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:342px) {
+    #box{
+    
+        h2{
+            font-size: 17px;
+        }
+    
+        h3{
+            font-size: 15px;
+        }
+    
+        p{
+            width: 200px;
+            font-size: 12.5px;
+        }
+
+        #svg-box{
+            left: 60px;
+        }
+    }
+    
+}
